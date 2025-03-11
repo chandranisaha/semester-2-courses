@@ -1,0 +1,3 @@
+SELECT Dno, SUM(Salary) AS Total_Salary
+FROM EMPLOYEE
+GROUP BY Dno;

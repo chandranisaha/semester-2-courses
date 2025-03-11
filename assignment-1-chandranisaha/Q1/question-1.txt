@@ -1,0 +1,5 @@
+Q1: Kaprekar’s routine is an iterative algorithm named after Indian Mathematician D. R. Kaprekar. The algorithm is
+illustrated as follows - https://www.numberphile.com/videos/6174.. Using SHELL, implement the below:
+a. Write a SHELL Program to implement Karprekar’s routine by reading the input (10 Marks)
+b. Handle the input exceptions and throw relevant prompt messages for atleast 2-3 use-cases (5 Marks)
+c. For given input, print number of iterations it took to return the Kaprekar's routine (5 Marks)

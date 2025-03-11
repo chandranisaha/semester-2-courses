@@ -1,0 +1,3 @@
+SELECT Fname, Lname, Salary
+FROM EMPLOYEE
+WHERE Salary = (SELECT MAX(Salary) FROM EMPLOYEE WHERE Salary < (SELECT MAX(Salary) FROM EMPLOYEE));

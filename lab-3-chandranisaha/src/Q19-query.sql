@@ -1,0 +1,5 @@
+SELECT E.Fname, E.Lname
+FROM EMPLOYEE E
+JOIN WORKS_ON W ON E.Ssn = W.Essn
+JOIN EMPLOYEE F ON F.Fname = 'Franklin' AND F.Lname = 'Wong'
+WHERE W.Pno IN (SELECT Pno FROM WORKS_ON WHERE Essn = F.Ssn);

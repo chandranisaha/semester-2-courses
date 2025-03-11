@@ -1,0 +1,2 @@
+Q3: Implement ‘Stoplight Game’ to illustrate Nash Equilibrium by providing random inputs to determine the
+outcomes. Include comment tag to describe each line of your program (10 Marks)
