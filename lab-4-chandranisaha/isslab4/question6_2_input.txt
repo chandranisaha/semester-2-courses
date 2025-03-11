@@ -1,0 +1,5 @@
+db.movies.aggregate([
+  { $match: { year: { $gt: 1920 } } },  // Filter for movies released after 1920
+  { $group: { _id: null, averageRating: { $avg: "$imdb.rating" } } }  // Calculate the average IMDb rating
+]);
+

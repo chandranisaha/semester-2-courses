@@ -1,0 +1,4 @@
+db.movies.aggregate([
+  { $unwind: "$genres" },
+  { $group: { _id: "$genres", count: { $sum: 1 } } }
+])

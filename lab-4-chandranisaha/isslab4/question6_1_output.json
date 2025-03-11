@@ -1,0 +1,23 @@
+[
+  { _id: 'Sci-Fi', count: 502 },
+  { _id: 'Fantasy', count: 547 },
+  { _id: 'Western', count: 63 },
+  { _id: 'Short', count: 268 },
+  { _id: 'News', count: 44 },
+  { _id: 'Thriller', count: 1518 },
+  { _id: 'Action', count: 1420 },
+  { _id: 'Musical', count: 151 },
+  { _id: 'Mystery', count: 674 },
+  { _id: 'War', count: 289 },
+  { _id: 'Family', count: 687 },
+  { _id: 'Drama', count: 6745 },
+  { _id: 'Psychological Thriller', count: 2 },
+  { _id: 'Sport', count: 206 },
+  { _id: 'Music', count: 431 },
+  { _id: 'Animation', count: 611 },
+  { _id: 'Adventure', count: 1021 },
+  { _id: 'Documentary', count: 1447 },
+  { _id: 'Crime', count: 1289 },
+  { _id: 'Romance', count: 1638 }
+]
+Type "it" for more

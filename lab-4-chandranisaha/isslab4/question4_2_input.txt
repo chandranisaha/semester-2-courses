@@ -1,0 +1,4 @@
+db.movies.updateOne(
+  { imdb: { $lt: 7.5 } },
+  { $set: { imdb: 8 } }
+)
