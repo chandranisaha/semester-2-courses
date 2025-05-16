@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus Task: Animation</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #121212;
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            color: #e0e0e0;
+        }
+
+        /* Keyframe animation for continuous fading */
+        @keyframes fade {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        .fading-text {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #ffffff;
+            animation: fade 3s infinite ease-in-out;
+        }
+
+        /* Stop fading on hover */
+        .fading-text:hover {
+            animation: none;
+            opacity: 1;
+        }
+
+        /* Keyframe animation for subtle bounce effect */
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .animated-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 15px;
+            box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.15);
+            animation: bounce 2s infinite ease-in-out;
+        }
+
+        /* Professional hover button */
+        .animated-button {
+            margin-top: 20px;
+            padding: 18px 50px;
+            font-size: 20px;
+            font-weight: 600;
+            border: 2px solid #ffffff;
+            border-radius: 30px;
+            background: transparent;
+            color: #ffffff;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+        }
+
+        .animated-button:hover {
+            transform: scale(1.2);
+            background: #ffffff;
+            color: #121212;
+            box-shadow: 0px 10px 25px rgba(255, 255, 255, 0.3);
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2 class="fading-text">Welcome to Bonus Animation Page</h2>
+    <img src="images/js.png" alt="Bouncing Image" class="animated-image">
+    <button class="animated-button">Hover Me</button>
+
+</body>
+</html>

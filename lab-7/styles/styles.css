@@ -1,0 +1,226 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #1b63a2;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    background-color: #4CAF50;
+    text-decoration: underline;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+/* Main Blog Section */
+.main-blog {
+    padding: 20px;
+}
+
+.main-blog h2 {
+    color: #1b63a2;
+}
+
+.main-blog p {
+    text-align: justify;
+    text-indent: 40px;
+}
+
+.main-blog img {
+    width: 250px;
+    height: 180px;
+    object-fit: contain;
+    margin-left: 20px;
+    float: right;
+}
+
+.main-blog ul {
+    margin: 10px 40px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Related Blogs Section */
+.related-blogs {
+    padding: 20px;
+}
+
+.related-blogs h2 {
+    color: #1b63a2;
+}
+
+.blogs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.blog-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    display: flex;
+}
+
+.blog-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    padding: 0 10px;
+}
+
+.blog-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1b63a2;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 1040px) {
+    .blogs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-card {
+        flex-direction: column;
+    }
+
+    .blog-card img {
+        margin-bottom: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Bonus Animation Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #121212;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+/* Keyframe animation for continuous fading */
+@keyframes fade {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.fading-text {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffffff;
+    animation: fade 3s infinite ease-in-out;
+}
+
+/* Stop fading on hover */
+.fading-text:hover {
+    animation: none;
+    opacity: 1;
+}
+
+/* Keyframe animation for subtle bounce effect */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.animated-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.15);
+    animation: bounce 2s infinite ease-in-out;
+}
+
+/* Professional hover button */
+.animated-button {
+    margin-top: 20px;
+    padding: 18px 50px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.animated-button:hover {
+    transform: scale(1.2);
+    background: #ffffff;
+    color: #121212;
+    box-shadow: 0px 10px 25px rgba(255, 255, 255, 0.3);
+}
