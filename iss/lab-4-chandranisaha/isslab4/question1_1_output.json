@@ -1,0 +1,13 @@
+var result = db.movies.insertOne({
+...   title: "Movie by Chandrani",
+...   year: 2025,
+...   genres: ["Psychological Thriller", "Horror"],
+...   runtime: [18 * 5],
+...   director: "Chandrani Saha",
+...   actors: ["Chris Evans", "Anne Hathaway"]
+... })
+... printjson(result);
+{
+  acknowledged: true,
+  insertedId: ObjectId('67ac7084a7f53499f2e4326b')
+}

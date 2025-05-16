@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="profile-card" id="profile-card">
+        <div class="profile-image">
+            <img src="/static/profile-placeholder.jpg" alt="Chandrani Saha">
+        </div>
+        <div class="profile-info">
+            <h1>Chandrani Saha</h1>
+            <h2>Software Developer & Creative Enthusiast</h2>
+            <p class="tagline">Passionate about coding, art, and innovation</p>
+        </div>
+    </div>
+</section>
+
+<section class="about-section">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <p>Hello! I'm Chandrani, a software developer with expertise in FastAPI, Python, JavaScript, and web development. I also have a deep love for creative arts and problem-solving.</p>
+        
+        <p>I enjoy building intuitive applications and leveraging technology to solve real-world challenges. Outside of coding, I express myself through painting and music.</p>
+        
+        <div class="cta-buttons">
+            <button class="cta-button" id="theme-toggle">Toggle Theme</button>
+            <a href="/resume" class="cta-button">View Resume</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

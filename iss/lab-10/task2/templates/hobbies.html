@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-header">
+    <h1>My Hobbies</h1>
+    <p>Activities that fuel my creativity and passion</p>
+</section>
+
+<section class="hobbies-grid">
+    {% for hobby in hobbies %}
+    <div class="hobby-card" onmouseover="highlightCard(this)" onmouseout="resetCard(this)">
+        <div class="hobby-icon">
+            <i class="fas fa-{{ hobby.icon }}"></i>
+        </div>
+        <h3>{{ hobby.name }}</h3>
+        <p>{{ hobby.description }}</p>
+    </div>
+    {% endfor %}
+</section>
+
+<section class="other-interests">
+    <h2>Other Interests</h2>
+    <ul class="interests-list">
+        <li>Exploring different cuisines and cooking</li>
+        <li>Playing chess and other strategic games</li>
+        <li>Learning new languages (currently studying Spanish)</li>
+        <li>Gardening and plant care</li>
+        <li>Meditation and mindfulness practices</li>
+    </ul>
+</section>
+{% endblock %}

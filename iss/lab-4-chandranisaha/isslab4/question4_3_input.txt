@@ -1,0 +1,4 @@
+db.movies.updateOne(
+  { year: 2006 },
+  { $set: { box_office: "$500M" } }
+)

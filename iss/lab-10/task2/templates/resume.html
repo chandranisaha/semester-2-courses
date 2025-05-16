@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-header">
+    <h1>My Resume</h1>
+    <p>A summary of my education, experience, and skills</p>
+</section>
+
+<div class="resume-container">
+    <section class="resume-section">
+        <h2>Education</h2>
+        {% for edu in education %}
+        <div class="resume-item">
+            <h3>{{ edu.institution }}</h3>
+            <p class="subtitle">{{ edu.degree }} | {{ edu.year }}</p>
+        </div>
+        {% endfor %}
+    </section>
+
+    <section class="resume-section">
+        <h2>Experience</h2>
+        {% for exp in experience %}
+        <div class="resume-item">
+            <h3>{{ exp.company }}</h3>
+            <p class="subtitle">{{ exp.role }} | {{ exp.period }}</p>
+        </div>
+        {% endfor %}
+    </section>
+
+    <section class="resume-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            {% for skill in skills %}
+            <span class="skill-badge">{{ skill }}</span>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="download-section">
+        <button id="print-resume" class="cta-button">Print Resume</button>
+    </section>
+</div>
+{% endblock %}

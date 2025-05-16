@@ -1,0 +1,10 @@
+Q2: Write a SHELL program to implement the following.
+a. Write a function that can randomly generate 11-digit bank account numbers (3 Marks)
+b. Now write another function that generates 11-digit bank account number but without four consecutive zeros
+‘0000’ in any part of the string (3 Marks)
+c. From the generated 11-digit bank account number from (a), print all possible two-digit prime numbers when
+the 11-digit bank account number is read in a linear sequence (5 Marks) Example: If 12345678910 is the
+generated 11- digit bank account number, 23,67 are the two-digit prime numbers.
+d. Write another function so that the generated 11-digit bank account number from (a), print the potential 5-digit
+numbers that are divisible by 7 when the 11-digit number is read is a linear sequence (10 Mark) Example:
+12341000390 is the generated number, 10003 is the five digit number that is divisible by 7. 

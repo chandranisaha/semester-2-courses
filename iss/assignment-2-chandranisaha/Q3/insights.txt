@@ -1,0 +1,75 @@
+--INSIGHT 1:  Hottest and Coldest Recorded Temperatures in Punjab
+
+OUTPUT:
+
++------------+----------+-------------+------+
+| date       | place    | temperature | type |
++------------+----------+-------------+------+
+| 2013-05-03 | Amritsar |          48 | Max  |
+| 1996-12-09 | Amritsar |        -3.6 | Min  |
++------------+----------+-------------+------+
+2 rows in set (0.00 sec)
+
+
+--INSIGHT 2:  Average Temperature for Each City
+
+OUTPUT:
+
++----------+--------------+--------------+
+| place    | avg_max_temp | avg_min_temp |
++----------+--------------+--------------+
+| Amritsar |        45.99 |        -0.58 |
+| Bathinda |        45.85 |        -0.05 |
+| Patiala  |        45.33 |         NULL |
+| Faridkot |         NULL |         -1.2 |
++----------+--------------+--------------+
+4 rows in set (0.00 sec)
+
+
+-- INSIGHT 3: Average Summer and Winter Temperatures
+
+OUPUT:
+
++----------------+
+| avg_summer_max |
++----------------+
+|          45.88 |
++----------------+
+1 row in set (0.00 sec)
+
++----------------+
+| avg_winter_min |
++----------------+
+|          -0.55 |
++----------------+
+1 row in set (0.00 sec)
+
+-- INSIGHT 4:  Average maximum and minimum temperatures over Decades
+
+OUPUT:
+
++--------+--------------+
+| decade | avg_min_temp |
++--------+--------------+
+| 1990s  |        -1.62 |
+| 2000s  |        -0.83 |
+| 2010s  |         0.12 |
+| 2020s  |        -0.85 |
++--------+--------------+
+4 rows in set (0.00 sec)
+
+-- INSIGHT 5: Months with the Most Temperature Extremes
+
+OUPUT:
+
++-------+--------------+-------------+
+| month | highest_temp | lowest_temp |
++-------+--------------+-------------+
+|     5 |           48 |        NULL |
+|     6 |         47.8 |        NULL |
+|     1 |         NULL |        -1.8 |
+|    12 |         NULL |        -3.6 |
+|     2 |         NULL |         0.4 |
++-------+--------------+-------------+
+5 rows in set (0.01 sec)
+

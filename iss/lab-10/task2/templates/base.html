@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Chandrani Saha</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Chandrani Saha</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/" class="{{ 'active' if request.url.path == '/' else '' }}">Home</a></li>
+                <li><a href="/hobbies" class="{{ 'active' if request.url.path == '/hobbies' else '' }}">Hobbies</a></li>
+                <li><a href="/resume" class="{{ 'active' if request.url.path == '/resume' else '' }}">Resume</a></li>
+                <li><a href="/contact" class="{{ 'active' if request.url.path == '/contact' else '' }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/chandranisaha" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="Your LinkedIn Profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a> 
+            </div>
+            <p>&copy; 2025 Chandrani Saha - Created with FastAPI & Jinja</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', path='/script.js') }}"></script>
+</body>
+</html>

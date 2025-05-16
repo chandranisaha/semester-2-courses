@@ -1,0 +1,6 @@
+[
+  { _id: [ 'Martin Scorsese' ], movieCount: 10 },
+  { _id: [ 'Yèji Yamada' ], movieCount: 6 },
+  { _id: [ 'Christopher Nolan' ], movieCount: 6 }
+]
+

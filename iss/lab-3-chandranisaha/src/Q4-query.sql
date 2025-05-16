@@ -1,0 +1,3 @@
+SELECT Fname, Lname
+FROM EMPLOYEE
+WHERE Fname LIKE 'J%';

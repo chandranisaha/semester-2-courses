@@ -1,0 +1,1 @@
+mongoexport --uri="mongodb+srv://chandranis026:RLqSkRBDSYKCfCrk@isslab4.bvszz.mongodb.net/sample_mflix?retryWrites=true&w=majority&appName=ISSLAB4" --collection=movies --out=movies.json

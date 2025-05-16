@@ -1,0 +1,1 @@
+db.movies.find({ genres: "Comedy" }).limit(3)

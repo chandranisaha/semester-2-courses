@@ -1,0 +1,3 @@
+db.movies.deleteMany(
+  { "imdb.rating": { $lt: 7.5 } }
+);

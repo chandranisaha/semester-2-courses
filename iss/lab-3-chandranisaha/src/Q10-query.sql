@@ -1,0 +1,3 @@
+SELECT Dno, MAX(Salary) AS Highest_Salary
+FROM EMPLOYEE
+GROUP BY Dno;

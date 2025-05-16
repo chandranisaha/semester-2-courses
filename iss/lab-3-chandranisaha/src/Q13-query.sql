@@ -1,0 +1,3 @@
+SELECT Fname, Lname
+FROM EMPLOYEE
+WHERE Salary > (SELECT AVG(Salary) FROM EMPLOYEE);
